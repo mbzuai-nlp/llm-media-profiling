@@ -93,7 +93,7 @@ Correct vs. incorrect predictions for U.S. and non-U.S. media outlets, highlight
 </p>
 
 ## 📌 Citation
-Please cite us if you use our data or models.
+Please cite us if you use our data or methodology.
 ```bibtex
 TBD
 ```
