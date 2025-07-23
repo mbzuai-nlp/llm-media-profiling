@@ -95,13 +95,23 @@ Correct vs. incorrect predictions for U.S. and non-U.S. media outlets, highlight
 ## 📌 Citation
 Please cite us if you use our data or methodology.
 ```bibtex
-@misc{mujahid2025profilingnewsmediafactuality,
-      title={Profiling News Media for Factuality and Bias Using LLMs and the Fact-Checking Methodology of Human Experts}, 
-      author={Zain Muhammad Mujahid and Dilshod Azizov and Maha Tufail Agro and Preslav Nakov},
-      year={2025},
-      eprint={2506.12552},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2506.12552}, 
+@inproceedings{mujahid-etal-2025-profiling,
+    title = "Profiling News Media for Factuality and Bias Using {LLM}s and the Fact-Checking Methodology of Human Experts",
+    author = "Mujahid, Zain Muhammad  and
+      Azizov, Dilshod  and
+      Agro, Maha Tufail  and
+      Nakov, Preslav",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.45/",
+    pages = "798--819",
+    ISBN = "979-8-89176-256-5"
 }
 ```
