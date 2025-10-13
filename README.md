@@ -16,7 +16,7 @@
 
 In an age characterized by the proliferation of mis- and disinformation online, it is critical to empower readers to understand the content they are reading. Important efforts in this direction rely on manual or automatic fact-checking, which can be challenging for emerging claims with limited information. Such scenarios can be handled by assessing the reliability and the political bias of the source of the claim, i.e., characterizing entire news outlets rather than individual claims or articles. This is an important but understudied research direction. While prior work has looked into linguistic and social contexts, we do not analyze individual articles or information in social media. Instead, we propose a novel methodology that mimics the criteria that professional fact-checkers use to assess the factuality and political bias of an entire outlet. Specifically, we design a variety of prompts based on these criteria, and we elicit responses from large language models (LLMs), which we aggregate to make predictions. In addition to demonstrating sizable improvements over strong baselines via extensive experiments with multiple LLMs, we provide an in-depth error analysis of the effect of media popularity and region on model performance. We further conduct an ablation study to highlight the key components of our dataset that contribute to these improvements.
 
-<p align="center" width="100%"><a href="https://github.com/mbzuai-nlp/llm-media-profiling" target="_blank">GitHub</a>, <a href="https://aclanthology.org/2025.findings-acl.45/" target="_blank">Paper</a></p>
+<p align="center" width="100%"><a href="https://github.com/mbzuai-nlp/llm-media-profiling" target="_blank">GitHub</a>, <a href="https://huggingface.co/datasets/zainmujahid/mbfc-media-outlets" target="_blank">Dataset</a>, <a href="https://aclanthology.org/2025.findings-acl.45/" target="_blank">Paper</a></p>
 
 <p align="center" width="100%">
     <a><img src="assets/methodology.png" alt="Title" style="width: 80%; min-width: 300px; display: block; margin: auto;"></a>
@@ -51,6 +51,13 @@ We adopt two main prompt strategies to elicit outlet-level insights from LLMs:
 These LLM responses are concatenated and passed to text classification models. We also present two case studies where we obtain zero-shot predictions from the LLMs by providing the media name and some of its recently published articles.
 
 ## 🗃️ Dataset
+
+You can use our dataset from HuggingFace:
+```
+from datasets import load_dataset
+dataset = load_dataset("zainmujahid/mbfc-media-outlets")
+```
+
 - 4,192 media outlets annotated for factuality of reporting
 - 3,649 outlets annotated for political bias
 - Factuality: ```low```, ```mixed```, ```high```
